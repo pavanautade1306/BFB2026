@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agritel | Official Feedback</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="brand-header">
+            <h2>🏛️ Agritel</h2>
+            <p class="team-tag">Engineered by Valeriyan Scripts</p>
+        </div>
+        <ul>
+            <li><a href="dashboard.html">📊 District Overview</a></li>
+            <li><a href="recommendation.html">📜 Crop Recommendation</a></li>
+            <li class="active"><a href="feedback.html">💬 Official Feedback</a></li>
+            <li><a href="index.html" class="logout">🚪 Secure Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="section-header">
+            <h1>System Feedback & Reporting</h1>
+            <p>Submit operational feedback or data anomalies to the central Agritel IT administration.</p>
+        </header>
+
+        <div class="form-container" style="max-width: 600px;">
+            <form id="feedback-form">
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <label>Officer Name / ID</label>
+                    <input type="text" placeholder="e.g., EMP-1029" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <label>Report Category</label>
+                    <select required>
+                        <option>Algorithmic Inaccuracy</option>
+                        <option>System Bug</option>
+                        <option>General Feedback</option>
+                    </select>
+                </div>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <label>Detailed Observations</label>
+                    <textarea rows="6" style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-family: inherit; width: 100%; box-sizing: border-box;" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Official Report</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

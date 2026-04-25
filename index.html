@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gov Login | AgriIntel Planning System</title>
+    <title>KrishiMitra Gov | Secure Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="login-body">
 
     <div class="login-container">
-        <div class="header">
-            <h1>🏛️ AgriIntel Gov Portal</h1>
-            <p>Data-Driven Insights for Regional Agricultural Planning</p>
+        <div class="gov-header">
+            <div class="emblem">🏛️</div>
+            <h1>Agrintel Portal</h1>
+            <p class="subtitle">Chhatrapati Sambhajinagar Administration</p>
+            <hr class="header-line">
         </div>
 
         <form id="loginForm">
             <div class="form-group">
-                <label for="email">Govt. Employee ID or Official Email</label>
-                <input type="text" id="email" name="email" placeholder="e.g. EMP-4092 or @gov.in" required>
+                <label for="empId">Official Employee ID</label>
+                <input type="text" id="empId" placeholder="e.g. EMP-4092" required>
             </div>
 
             <div class="form-group">
-                <label for="password">Secure Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
             </div>
 
             <button type="submit" class="btn-login">Secure Login</button>
         </form>
 
-        <div class="footer-links">
-            <p><a href="#">Contact IT Admin</a></p>
-            <p>Authorized Personnel Only</p>
+        <div class="gov-footer">
+            <p>Authorized Personnel Only.</p>
         </div>
     </div>
 
