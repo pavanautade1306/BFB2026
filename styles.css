@@ -1,0 +1,17 @@
+body{font-family:Segoe UI,Arial,Helvetica,sans-serif;margin:20px;background:#f3f6fb;color:#1b2430}
+h1{margin:0 0 6px}
+.card{background:#fff;border-radius:8px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,0.06)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+label{display:flex;flex-direction:column;font-size:14px;flex:1;min-width:180px}
+input[type=number],select,input[type=range]{padding:6px;border:1px solid #dbe6f0;border-radius:4px}
+.actions{display:flex;gap:8px}
+button{background:#0b69ff;color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+button[aria-disabled]{opacity:0.6;cursor:default}
+#results{padding:8px 0}
+.chart{margin-top:12px}
+.bar-row{display:flex;align-items:center;margin-bottom:8px}
+.bar-label{width:110px;font-size:14px;color:#334155}
+.bar-wrap{flex:1;background:#eef4ff;border-radius:6px;padding:4px}
+.bar{background:#0b69ff;color:white;padding:6px;border-radius:4px;display:inline-block;white-space:nowrap}
+ol{padding-left:18px;margin:8px 0}
+footer{margin-top:8px;color:#6b7280}
