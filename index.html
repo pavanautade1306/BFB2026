@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CropSmart — Crop Decision Intelligence System</title>
-    <meta name="description" content="Smart crop recommendations for Indian farmers based on soil, climate, and region data." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov Login | AgriIntel Planning System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="header">
+            <h1>🏛️ AgriIntel Gov Portal</h1>
+            <p>Data-Driven Insights for Regional Agricultural Planning</p>
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Govt. Employee ID or Official Email</label>
+                <input type="text" id="email" name="email" placeholder="e.g. EMP-4092 or @gov.in" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Secure Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn-login">Secure Login</button>
+        </form>
+
+        <div class="footer-links">
+            <p><a href="#">Contact IT Admin</a></p>
+            <p>Authorized Personnel Only</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 </html>

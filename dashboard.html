@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District Overview | AgriIntel Gov</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>🏛️ AgriIntel</h2>
+        <ul>
+            <li class="active"><a href="dashboard.html">📊 District Overview</a></li>
+            <li><a href="recommendation.html">📜 Generate Advisories</a></li>
+            <li><a href="#">📈 Commodity Index</a></li>
+            <li><a href="#">💧 Reservoir Levels</a></li>
+            <li><a href="index.html" class="logout">🚪 Secure Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Welcome, Regional Agriculture Officer.</h1>
+            <p>Here is the aggregated daily briefing for your assigned district.</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>🌤️ Regional Climate Avg</h3>
+                <p class="stat-value" id="weather-val">--°C</p>
+                <p class="stat-desc" id="weather-desc">Loading regional data...</p>
+            </div>
+            <div class="stat-card">
+                <h3>💧 District Soil Health</h3>
+                <p class="stat-value" id="moisture-val">--</p>
+                <p class="stat-desc">Aggregated via Sentinel-2 Satellite</p>
+            </div>
+            <div class="stat-card">
+                <h3>📈 Top Commodity Shift</h3>
+                <p class="stat-value" id="market-val">--</p>
+                <p class="stat-desc">State Mandi Average Price</p>
+            </div>
+        </div>
+
+        <div class="recommendation-section">
+            <h2>Upcoming Season Planning</h2>
+            <p>Utilize the AI Engine to analyze aggregated soil test data and climatic forecasts to generate official crop advisories and plan seed subsidies for local farmers.</p>
+            <button id="btn-recommend" class="btn-primary">Run Regional Viability Analysis</button>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

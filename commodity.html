@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodity Index | AgriIntel Gov</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .market-container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-top: 20px; }
+        .control-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: var(--light-green); padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        
+        .input-group label { font-size: 14px; font-weight: bold; color: var(--dark-text); display: block; margin-bottom: 8px; }
+        .input-group select, .input-group input { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; }
+        
+        .commodity-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .commodity-table th, .commodity-table td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+        .commodity-table th { background-color: #f9f9f9; color: var(--dark-text); font-weight: 600; }
+        
+        .badge { padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+        .badge-danger { background: #FFEBEE; color: #D32F2F; }
+        .badge-warning { background: #FFF8E1; color: #F57C00; }
+        .badge-success { background: #E8F5E9; color: #2E7D32; }
+        .badge-info { background: #E3F2FD; color: #1976D2; }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>🏛️ AgriIntel</h2>
+        <ul>
+            <li><a href="dashboard.html">📊 District Overview</a></li>
+            <li><a href="recommendation.html">📜 Predictor Advisory</a></li>
+            <li class="active"><a href="#">📈 Commodity Index</a></li>
+            <li><a href="#">💧 Reservoir Levels</a></li>
+            <li><a href="index.html" class="logout">🚪 Secure Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>National Commodity Index & Market Vulnerability 📈</h1>
+            <p>Simulate regional climate shocks to forecast price volatility and trigger automated policy interventions.</p>
+        </header>
+
+        <div class="market-container">
+            <div class="control-panel">
+                <div class="input-group">
+                    <label for="zone-select">Agro-Climatic Zone</label>
+                    <select id="zone-select">
+                        <option value="6">Zone 6 - Trans-Gangetic Plains (Punjab, Haryana)</option>
+                        <option value="10">Zone 10 - Southern Plateau (Maharashtra, Karnataka)</option>
+                        <option value="4">Zone 4 - Middle Gangetic Plains (UP, Bihar)</option>
+                        <option value="14">Zone 14 - Western Dry Region (Rajasthan)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="rain-deviation">Regional Rainfall Forecast Deviation (%)</label>
+                    <input type="range" id="rain-deviation" min="-60" max="60" value="0" oninput="document.getElementById('rain-val').innerText = this.value + '%'">
+                    <p style="margin: 5px 0 0 0; font-size: 13px; font-weight:bold; color: #555;">Status: <span id="rain-val">0%</span></p>
+                </div>
+            </div>
+
+            <table class="commodity-table">
+                <thead>
+                    <tr>
+                        <th>Commodity</th>
+                        <th>Projected Supply</th>
+                        <th>Est. Price Shift</th>
+                        <th>Recommended Gov Policy</th>
+                    </tr>
+                </thead>
+                <tbody id="market-data">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="commodity.js"></script>
+</body>
+</html>
